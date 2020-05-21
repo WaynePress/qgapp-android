@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e8ea"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x45"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x15"
+            android:text="@string/cancle"
+            android:textColor="@color/c_313842"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:text="@string/withdraw_deposit_way"
+            android:textColor="@color/c_313842"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x45"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x15"
+            android:text="@string/confirm"
+            android:textColor="@color/c_313842"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="#c3c6cf"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/x20"
+        android:paddingRight="@dimen/x30"
+        android:paddingBottom="@dimen/x20"
+        android:text="@string/withdrawdeposit_des"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

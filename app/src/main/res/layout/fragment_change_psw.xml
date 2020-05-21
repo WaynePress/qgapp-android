@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/statusbar" />
+
+    <include layout="@layout/toolbar_shadow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:text="@string/old_password"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_old_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/transparent"
+        android:hint="@string/input_psw"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:textSize="12sp" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:text="@string/new_password"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_new_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/transparent"
+        android:hint="@string/input_psw"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:textSize="12sp" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:text="@string/confirm_password"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/transparent"
+        android:hint="@string/input_psw"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:textSize="12sp" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:text="@string/change_psw"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x15"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_forget_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/forget_psw"
+            android:textColor="@color/c_EC72AD"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

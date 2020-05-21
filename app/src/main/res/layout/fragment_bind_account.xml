@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/statusbar" />
+
+    <include layout="@layout/toolbar_shadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x54"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@drawable/shape_5"
+        android:backgroundTint="@color/c_EC72AD"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:gravity="center|right"
+            android:hint="@string/input_phone2"
+            android:inputType="phone"
+            android:maxEms="11"
+            android:paddingRight="@dimen/x20"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x54"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@drawable/shape_5"
+        android:backgroundTint="@color/c_EC72AD"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="@string/code"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:background="@color/transparent"
+            android:gravity="center|right"
+            android:hint="@string/input_code"
+            android:inputType="phone"
+            android:maxEms="6"
+            android:paddingRight="@dimen/x10"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/shape_ebebeb_5"
+            android:backgroundTint="@color/c_EC72AD"
+            android:gravity="center"
+            android:text="@string/get_code"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_bind"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x50"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x40"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:text="@string/updata"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="H,800:540"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_free"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x24"
+        android:background="@drawable/shape_free"
+        android:gravity="center"
+        android:text="@string/free"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_collect"
+        android:layout_width="@dimen/x50"
+        android:layout_height="@dimen/x50"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/x8"
+        android:background="@drawable/bg_collect"
+        android:padding="@dimen/x9"
+        android:src="@drawable/add_collect"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_marginBottom="@dimen/x40"
+        android:background="@color/halftransparent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/update_time"
+            android:drawablePadding="@dimen/x5"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_hot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/hot"
+            android:drawablePadding="@dimen/x5"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/time"
+            android:drawablePadding="@dimen/x5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_below="@+id/cl_image"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+

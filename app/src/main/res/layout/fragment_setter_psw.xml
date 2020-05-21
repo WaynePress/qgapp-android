@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/statusbar" />
+
+    <include layout="@layout/toolbar_shadow" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x55"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_1"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_20"
+                android:backgroundTint="@color/black"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_2"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_20"
+                android:backgroundTint="@color/black"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_3"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_20"
+                android:backgroundTint="@color/black"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_4"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_20"
+                android:backgroundTint="@color/black"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/table_v_divider"
+        android:showDividers="middle|beginning">
+
+        <TableRow
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end">
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end">
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_9"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end">
+
+            <TextView
+                android:id="@+id/tv_0"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/x12"
+                android:text="@string/clear"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

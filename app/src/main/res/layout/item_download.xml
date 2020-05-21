@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_iamge"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="sssssssssssss"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_iamge"
+        app:layout_constraintTop_toTopOf="@+id/iv_iamge" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:text="状态："
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_iamge"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:text="进度："
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_status"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_control"
+        android:layout_width="@dimen/x60"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_ebebeb_5"
+        android:backgroundTint="@color/c_EC72AD"
+        android:gravity="center"
+        android:text="播放"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_iamge"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="@dimen/x60"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_ebebeb_5"
+        android:backgroundTint="@color/c_EC72AD"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_control"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+</android.support.constraint.ConstraintLayout>

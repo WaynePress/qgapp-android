@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:task="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:textColor="@color/c_9B9A9A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        task:text="2018-11" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/c_EC72AD"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_time"
+        task:text="-3元" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x25"
+        android:textColor="@color/c_9B9A9A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time"
+        task:text="哩哩啦啦" />
+
+    <TextView
+        android:id="@+id/tv_card_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x30"
+        android:layout_marginTop="@dimen/x25"
+        android:textColor="@color/c_9B9A9A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time"
+        task:text="哩哩啦啦" />
+
+</android.support.constraint.ConstraintLayout>

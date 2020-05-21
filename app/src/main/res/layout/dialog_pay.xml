@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x280"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_20"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x15"
+        android:gravity="center"
+        android:text="@string/pay"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x20"
+        android:text="@string/after_pay"
+        android:textColor="@color/c_333"
+        android:textSize="14sp" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:gravity="center"
+        android:text="@string/cancle"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:gravity="center"
+        android:text="@string/balance_pay"
+        android:textColor="@color/c_EC72AD"
+        android:textSize="16sp" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/tv_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:gravity="center"
+        android:text="微信"
+        android:textColor="@color/c_EC72AD"
+        android:textSize="16sp" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/tv_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:gravity="center"
+        android:text="@string/alipay_pay"
+        android:textColor="@color/c_EC72AD"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

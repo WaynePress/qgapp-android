@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x50"
+        android:layout_marginLeft="@dimen/x15"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/gross_amount"
+            android:textColor="@color/c_646464"
+            android:textSize="@dimen/x14" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x5"
+            android:gravity="center_vertical"
+            android:text="5.21"
+            android:textColor="@color/c_EC72AD"
+            android:textSize="@dimen/x14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/yuan"
+            android:textColor="@color/c_646464"
+            android:textSize="@dimen/x14" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+</LinearLayout>

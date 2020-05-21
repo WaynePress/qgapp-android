@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="@dimen/x40"
+                app:expandedTitleMarginStart="@dimen/x40"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <!--|enterAlways-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/x10">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:scrollbars="none">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x10"
+                        android:background="@color/c_ebebeb" />
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:padding="@dimen/x15"
+                android:text="@string/other_hot_classify"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/flow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/x10"
+                android:paddingLeft="@dimen/x15"
+                android:paddingRight="@dimen/x15"
+                android:paddingTop="@dimen/x10"
+                app:flChildSpacing="@dimen/x10"
+                app:flRowSpacing="@dimen/x10" />
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/lx_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:text="@string/empty_messages"
+        android:textColor="@color/c_646464"
+        android:visibility="gone" />
+</android.support.constraint.ConstraintLayout>

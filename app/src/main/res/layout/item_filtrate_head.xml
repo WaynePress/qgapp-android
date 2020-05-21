@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/x15"
+    android:layout_marginStart="@dimen/x15">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x15"
+        android:background="@drawable/shape_box_20"
+        android:backgroundTint="@color/c_ff6c00"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/c_ff6c00"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x50"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintLeft_toRightOf="@+id/tv_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x15"
+        android:background="@color/c_ebebeb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+</android.support.constraint.ConstraintLayout>

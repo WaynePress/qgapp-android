@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/statusbar" />
+
+    <include layout="@layout/toolbar_shadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_oval"
+            android:layout_centerHorizontal="true"
+            android:text="@string/psw_lock"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/psw_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:checked="false"
+            android:switchMinWidth="@dimen/x40"
+            android:thumb="@drawable/cyclo_thumb"
+            android:track="@drawable/switch_track" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_oval"
+            android:layout_centerHorizontal="true"
+            android:text="@string/autoplay"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/autoplay_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:checked="true"
+            android:switchMinWidth="@dimen/x40"
+            android:thumb="@drawable/cyclo_thumb"
+            android:track="@drawable/switch_track" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"
+        android:background="@color/c_ebebeb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:text="@string/version"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+</LinearLayout>

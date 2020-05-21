@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/statusbar" />
+
+    <include layout="@layout/toolbar_shadow" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@mipmap/card_month"
+
+
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:src="@mipmap/vip_card"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_month_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:text="@string/buy_month_des"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip_month"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:text="@string/vip_month"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/tv_price_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/c_EC72AD"
+                    android:textSize="26sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price_month"
+                    android:layout_marginTop="@dimen/x8"
+                    android:text="@string/buy_month_des"
+                    android:textColor="@color/c_BBB"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_buy_vip_month"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x32"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_ebebeb_5"
+                    android:backgroundTint="@color/c_EC72AD"
+                    android:gravity="center"
+                    android:text="@string/buy_now"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@mipmap/card_quarter"
+
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:src="@mipmap/vip_card"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_quarter_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:text="@string/buy_quarter_des"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:text="@string/vip_quarter"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_vip_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/tv_price_quarter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/c_EC72AD"
+                    android:textSize="26sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price_quarter"
+                    android:layout_marginTop="@dimen/x8"
+                    android:text="@string/buy_quarter_des"
+                    android:textColor="@color/c_BBB"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_buy_vip_quarter"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x32"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_ebebeb_5"
+                    android:backgroundTint="@color/c_EC72AD"
+                    android:gravity="center"
+                    android:text="@string/buy_now"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@mipmap/card_yead"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:src="@mipmap/vip_card"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_yead_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:text="@string/buy_yead_des"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x5"
+                    android:text="@string/vip_year"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_vip_yead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/tv_price_yead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/c_EC72AD"
+                    android:textSize="26sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price_yead"
+                    android:layout_marginTop="@dimen/x8"
+                    android:text="@string/buy_quarter_des"
+                    android:textColor="@color/c_BBB"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_buy_vip_year"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x32"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_ebebeb_5"
+                    android:backgroundTint="@color/c_EC72AD"
+                    android:gravity="center"
+                    android:text="@string/buy_now"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x30" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

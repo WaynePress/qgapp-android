@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/paddingView"
+        layout="@layout/statusbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/app_logo"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_weight="100"
+            android:background="@drawable/shape_20"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center_vertical"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:lines="1"
+            android:paddingLeft="@dimen/x15"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_filtrate"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x28"
+            android:layout_marginRight="@dimen/x15"
+            android:background="@drawable/shape_box_20"
+            android:drawableRight="@drawable/ic_expand_more_black_24dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x8"
+            android:paddingRight="@dimen/x4"
+            android:text="@string/filtrate"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x40"
+        app:tabIndicatorColor="@color/c_EC72AD"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@drawable/selecter_text" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

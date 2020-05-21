@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:minWidth="60dp"
+    android:minHeight="60dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x120"
+        android:background="@color/black"
+        android:padding="@dimen/x5"
+        android:text="每天凌晨00:00重制看片次数，绑定手机和推广可以永久增加次数"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

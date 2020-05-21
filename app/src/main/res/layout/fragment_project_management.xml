@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/statusbar" />
+
+    <include layout="@layout/toolbar_shadow" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_no_vip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_open_vip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x40"
+            android:text="@string/no_order" />
+
+        <TextView
+            android:id="@+id/tv_open_vip"
+            android:layout_width="@dimen/x124"
+            android:layout_height="@dimen/x44"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_my_vip_25"
+            android:gravity="center"
+            android:text="@string/open_vip"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="@dimen/x40"
+                app:expandedTitleMarginStart="@dimen/x40"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <!--|enterAlways-->
+
+                <include layout="@layout/current_project" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/c_ebebeb" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:text="@string/history_order"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <include layout="@layout/line" />
+
+            <include layout="@layout/recyclerlayout" />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

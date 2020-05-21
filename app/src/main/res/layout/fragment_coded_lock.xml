@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/statusbar" />
+
+        <include layout="@layout/toolbar_shadow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@drawable/shape_5"
+        android:backgroundTint="@color/c_EC72AD"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/ll_head">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/input_coded_lock"
+            android:maxEms="16"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@drawable/shape_5"
+        android:backgroundTint="@color/c_EC72AD"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/ll_head">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="@string/coded_lock_setted"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_change_coded_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="@string/change_coded_lock"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bind"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x50"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x60"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:text="@string/updata"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_edit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x60"
+        android:layout_marginRight="@dimen/x20"
+        android:lineSpacingExtra="@dimen/x10"
+        android:text="@string/coded_lock_alert"
+        android:textColor="@color/c_FE1515"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bind"
+        app:layout_goneMarginTop="@dimen/x140" />
+</android.support.constraint.ConstraintLayout>

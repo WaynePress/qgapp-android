@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_head"
+        android:layout_marginTop="@dimen/_x70"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x70"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_buy_vip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/x20"
+                    android:paddingTop="@dimen/x20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/x10"
+                        android:drawableTop="@mipmap/vip1"
+                        android:text="@string/buy_vip3"
+                        android:textColor="@color/c_333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x2"
+                        android:text="@string/show_head_1"
+                        android:textColor="@color/c_9B9A9A"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="@dimen/x60"
+                    android:background="@color/c_e1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_daili2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/x20"
+                    android:paddingTop="@dimen/x20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/x10"
+                        android:drawableTop="@mipmap/proxy1"
+                        android:text="@string/proxy"
+                        android:textColor="@color/c_333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x2"
+                        android:text="@string/show_head_2"
+                        android:textColor="@color/c_9B9A9A"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="@dimen/x60"
+                    android:background="@color/c_e1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_withdraw_deposit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/x20"
+                    android:paddingTop="@dimen/x20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/x10"
+                        android:drawableTop="@mipmap/withdraw_deposit1"
+                        android:text="@string/withdraw_deposit"
+                        android:textColor="@color/c_333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x2"
+                        android:textColor="@color/c_9B9A9A"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="@dimen/x60"
+                    android:background="@color/c_e1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/x20"
+                    android:paddingTop="@dimen/x20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/x10"
+                        android:drawableTop="@mipmap/share1"
+                        android:text="@string/share"
+                        android:textColor="@color/c_333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x2"
+                        android:textColor="@color/c_9B9A9A"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    style="@style/text_my_list"
+                    android:layout_weight="100"
+                    android:drawableLeft="@mipmap/account1"
+                    android:drawableRight="@null"
+                    android:text="@string/change_account" />
+
+                <ImageView
+                    android:id="@+id/iv_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x5"
+                    android:padding="@dimen/x5"
+                    android:src="@mipmap/qrcode" />
+
+                <ImageView
+                    android:id="@+id/iv_sacn_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x5"
+                    android:padding="@dimen/x5"
+                    android:src="@mipmap/sacn_qrcode" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/ic_chevron_right_black_24dp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <TextView
+                android:id="@+id/tv_find_account"
+                style="@style/text_my_list"
+                android:drawableLeft="@mipmap/find_account1"
+                android:text="@string/find_account" />
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:id="@+id/ll_bind_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bind_account"
+                    style="@style/text_my_list"
+                    android:layout_weight="100"
+                    android:drawableLeft="@mipmap/change_bind_account1"
+                    android:drawableRight="@null"
+                    android:text="@string/bind_account" />
+
+                <TextView
+                    android:id="@+id/tv_account_number"
+                    style="@style/text_my_list"
+                    android:layout_width="wrap_content"
+                    android:text="@string/up_watch_number"
+                    android:textColor="@color/c_EC72AD" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <TextView
+                android:id="@+id/tv_coded_lock"
+                style="@style/text_my_list"
+                android:drawableLeft="@mipmap/security_code1"
+                android:text="@string/coded_lock" />
+
+            <include layout="@layout/line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/c_ebebeb" />
+
+
+            <TextView
+                android:id="@+id/tv_request_video"
+                style="@style/text_my_list"
+                android:drawableLeft="@mipmap/request_video1"
+                android:text="@string/request_video" />
+
+            <include layout="@layout/line" />
+
+            <TextView
+                android:id="@+id/tv_history_watch"
+                style="@style/text_my_list"
+                android:drawableLeft="@mipmap/history_watch1"
+                android:text="@string/history_watch" />
+
+            <include layout="@layout/line" />
+
+            <TextView
+                android:id="@+id/tv_download"
+                style="@style/text_my_list"
+                android:drawableLeft="@mipmap/download1"
+                android:text="@string/download" />
+
+            <include layout="@layout/line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_my_list"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@mipmap/coded_lock1"
+                    android:drawableRight="@null"
+                    android:text="@string/psw_lock"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/psw_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:checked="false"
+                    android:switchMinWidth="@dimen/x40"
+                    android:thumb="@drawable/cyclo_thumb"
+                    android:track="@drawable/switch_track" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/c_ebebeb" />
+
+            <TextView
+                android:id="@+id/tv_invitation_code"
+                style="@style/text_my_list"
+                android:drawableLeft="@mipmap/invitation_code1"
+                android:drawableRight="@null"
+                android:text="@string/invitation_code" />
+
+            <include layout="@layout/line" />
+
+            <TextView
+                android:id="@+id/tv_customer_services"
+                style="@style/text_my_list"
+                android:drawableLeft="@mipmap/customer_services1"
+                android:drawableRight="@null"
+                android:visibility="gone"
+                android:text="@string/customer_services" />
+
+            <include layout="@layout/line"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_car_crowd"
+                style="@style/text_my_list"
+                android:drawableLeft="@mipmap/car_crowd1"
+                android:drawableRight="@null"
+                android:text="@string/car_crowd" />
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x60"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_my_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/current_version1"
+                    android:drawableRight="@null"
+                    android:paddingRight="0dp"
+                    android:text="@string/version" />
+
+                <TextView
+                    android:id="@+id/tv_app_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x230"
+        android:layout_below="@+id/paddingView"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x230"
+            android:background="@drawable/shape_my_head"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_oval"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x30"
+                android:background="@drawable/shape_oval" />
+
+            <ImageView
+                android:id="@+id/iv_header"
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/x70"
+                android:layout_below="@+id/paddingView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x35" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_oval"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_watch_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/residue_num"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/iv_help"
+                    android:layout_width="@dimen/x38"
+                    android:layout_height="@dimen/x38"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:background="@mipmap/help" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_marginTop="@dimen/x5"
+                android:gravity="center"
+                android:text="@string/advertising_des"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_head_vip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/vip_month"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_oval_vip"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/shape_oval" />
+
+            <ImageView
+                android:id="@+id/iv_header_vip"
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/x70"
+                android:layout_below="@+id/paddingView"
+                android:layout_marginLeft="@dimen/x35"
+                android:layout_marginTop="@dimen/x15" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/x1"
+                android:layout_below="@+id/iv_oval_vip"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x15"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_month_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x5"
+                android:text="@string/buy_month_des"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/x1"
+                android:layout_below="@+id/tv_month_des"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_vip_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x5"
+                android:text="@string/vip_month"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/statusbar" />
+</RelativeLayout>

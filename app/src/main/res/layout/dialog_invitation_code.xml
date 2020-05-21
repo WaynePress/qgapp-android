@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x280"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_20"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x15">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:text="控制灵敏度设置"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:src="@drawable/ic_clear_black_24dp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_low_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x15"
+            android:text="低"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="快进快退"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_high_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/x15"
+            android:layout_marginRight="@dimen/x20"
+            android:text="高"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/sb_1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_marginTop="@dimen/x8"
+            android:layout_toLeftOf="@+id/tv_high_1"
+            android:layout_toRightOf="@+id/tv_low_1"
+            android:max="10"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/seek_progress"
+            android:thumb="@drawable/seek_thumb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_low_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x15"
+            android:text="低"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="亮度调节"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_high_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/x15"
+            android:layout_marginRight="@dimen/x20"
+            android:text="高"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/sb_2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_2"
+            android:layout_marginTop="@dimen/x8"
+            android:layout_toLeftOf="@+id/tv_high_2"
+            android:layout_toRightOf="@+id/tv_low_2"
+            android:max="10"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/seek_progress"
+            android:thumb="@drawable/seek_thumb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_low_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x15"
+            android:text="低"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="音量调节"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_high_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/x15"
+            android:layout_marginRight="@dimen/x20"
+            android:text="高"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/sb_3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_3"
+            android:layout_marginTop="@dimen/x8"
+            android:layout_toLeftOf="@+id/tv_high_3"
+            android:layout_toRightOf="@+id/tv_low_3"
+            android:max="10"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/seek_progress"
+            android:thumb="@drawable/seek_thumb" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20" />
+</LinearLayout>

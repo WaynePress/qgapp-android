@@ -1,0 +1,100 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.StartingWindowTheme" parent="AppTheme">
+        <!-- 可以设置成纯颜色（设置一个和Activity UI相似的背景） -->
+        <!--<item name="android:windowBackground">@color/startingwindow_bgcolor</item>-->
+        <!--也可以设置成一张图片 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/qidong</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@color/black</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+    </style>
+    <style name="MenuTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    <style name="Theme.Light.NoTitle.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    <style name="Theme.Light.NoTitle.NoShadow.Dialog" parent="Theme.Light.NoTitle.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Animation.Bottom.Rising" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="text_my_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x60</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:drawablePadding">@dimen/x10</item>
+        <item name="android:paddingLeft">@dimen/x20</item>
+        <item name="android:paddingRight">@dimen/x20</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/ic_chevron_right_black_24dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="text_my_list1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x60</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:drawablePadding">@dimen/x10</item>
+        <item name="android:paddingLeft">@dimen/x20</item>
+        <item name="android:paddingRight">@dimen/x20</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="elevation">0dp</item>  <!--Android 去掉toolbar阴影-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay.Shadow" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="Toolbar_TextAppearance_Black">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+</resources>

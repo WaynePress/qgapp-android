@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/statusbar" />
+
+    <include layout="@layout/toolbar_shadow" />
+
+
+    <TextView
+        android:id="@+id/tv_current_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginRight="@dimen/x50"
+        android:text="@string/current_account"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:text="@string/current_account_show"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x54"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_marginRight="@dimen/x50"
+        android:background="@drawable/shape_5"
+        android:backgroundTint="@color/c_EC72AD"
+        android:hint="@string/input_account"
+        android:lines="1"
+        android:maxEms="15"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/et_psw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x54"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginBottom="@dimen/x10"
+        android:background="@drawable/shape_5"
+        android:backgroundTint="@color/c_EC72AD"
+        android:hint="@string/input_safe_code"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:text="@string/confirm2"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <include layout="@layout/jz_layout_standard" />
+
+    <View
+        android:id="@+id/img_touming"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/iv_lock"
+        android:layout_width="@dimen/x34"
+        android:layout_height="@dimen/x34"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@drawable/shape_oval2"
+        android:padding="@dimen/x8"
+        android:src="@drawable/ic_lock_open_black_24dp"
+        android:visibility="gone"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_down"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_toLeftOf="@+id/iv_set"
+        android:background="@mipmap/down"
+        android:padding="@dimen/x8"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_set"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x40"
+        android:background="@mipmap/set_video"
+        android:padding="@dimen/x8"
+        android:visibility="gone" />
+</RelativeLayout>
